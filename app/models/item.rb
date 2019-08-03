@@ -32,7 +32,7 @@ class Item < ApplicationRecord
 
   end
 
-  #　テーブル名　列名　user_id で特定
+  # テーブル名　列名　user_id で特定
   # 最終的には列 nodeをidで取得
   def get_column(name, user_id)
 
@@ -53,9 +53,8 @@ class Item < ApplicationRecord
 
   # 行方向のノードセットの条件ってなんだっけ？
   # row_header から出る edge classの定義
-  # edge_class
   def get_graph_node_by_row_set(row_header_node_id)
-
+    row_header_node = get_row_header_node
   end
 
 end
